@@ -1,6 +1,8 @@
 # 04-hooks-app
 
-## Instalar y configurar Tailwindcss
+## 117. TailwindCSS y Estilos
+
+### Instalar y configurar Tailwindcss
 
 **https://tailwindcss.com/**
 
@@ -46,7 +48,9 @@ Copiar contenido y pegar en **index.css**
 }
 ```
 
-5. Estructura TrafficLight.tsx
+## 118. useState - Estado que re-dibuja
+
+1. Estructura TrafficLight.tsx
 
 Copiar y pegar contenido TrafficLight.tsx
 
@@ -86,4 +90,15 @@ export const TrafficLight = () => {
     </div>
   );
 };
+```
+
+## 120. useEffect - Disparar efectos secundarios
+
+1. Crear carpeta **02-useEffect**
+2. Copiar y pegar archivo **TrafficLightColor.tsx** en carpeta **02-useEffect**
+3. Renombrar archivo **./02-useEffect/TrafficLight.tsx** por **TrafficLightWithEffect.tsx**
+4. Implement useEffect
+
+```
+
 ```
