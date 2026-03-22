@@ -108,3 +108,17 @@ export const TrafficLight = () => {
 3. Crear carpeta **hooks** en la raiz **/src**
 
 4. Crear archivo **./hooks/useTrafficLight.ts**
+
+## 124. Conectar varios CustomHook entre si
+
+1. Crear carpeta en la raiz **/src/03-examples**
+2. Crear archivo **/src/PokemonPage.tsx**
+3. Copiar contenido base de PokemonPage desde gist y pegar en **PokemonPage.tsx**
+
+```
+https://gist.github.com/Klerith/8ddc0ae428867ee48b2bafd812148d71
+```
+
+4. Crear archivo **/hooks/usePokemon.ts**
+
+5. Crear archivo **/hooks/useCounter.ts**
