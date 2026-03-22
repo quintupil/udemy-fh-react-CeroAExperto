@@ -12,20 +12,38 @@ export const TrafficLightWithEffect = () => {
   const [light, setLight] = useState<TrafficLightColor>("red");
   const [countdown, setCountdown] = useState(5);
 
+  //countdown effect
   useEffect(() => {
-    if (countdown == 0) return;
-    console.log(countdown);
+    if (countdown === 0) return;
     const intervalId = setInterval(() => {
-      console.log("setInterval llamado");
-      setCountdown((prev: number) => prev - 1);
+      setCountdown((prev) => prev - 1);
     }, 1000);
 
-    //Bloque de limpieza del effect
     return () => {
-      console.log("Cleanup effect");
       clearInterval(intervalId);
     };
   }, [countdown]);
+
+  //change light color effect
+  useEffect(() => {
+    if (countdown > 0) return;
+
+    setCountdown(5);
+
+    if (light === "red") {
+      setLight("green");
+      return;
+    }
+    if (light === "yellow") {
+      setLight("red");
+      return;
+    }
+    if (light === "green") {
+      setLight("yellow");
+      //setCountdown(2);
+      return;
+    }
+  }, [countdown, light]);
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-900 via-gray-900 to-slate-800 flex items-center justify-center p-4">
@@ -34,6 +52,12 @@ export const TrafficLightWithEffect = () => {
           Semáforo con useEffect
         </h1>
         <h2 className="text-white text-xl">Countdown: {countdown}</h2>
+        <div className="w-64 bg-gray-700 rounded-full h-2">
+          <div
+            className="bg-blue-500 h-2 rounded-full transition-all duration-1000 ease-liner"
+            style={{ width: `${(countdown / 5) * 100}%` }}
+          ></div>
+        </div>
         <div
           className={`w-32 h-32 ${light === "red" ? colors[light] : "bg-gray-500"} rounded-full`}
         ></div>
