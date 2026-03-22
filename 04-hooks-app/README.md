@@ -99,6 +99,12 @@ export const TrafficLight = () => {
 3. Renombrar archivo **./02-useEffect/TrafficLight.tsx** por **TrafficLightWithEffect.tsx**
 4. Implement useEffect
 
-```
+## 122. Tarea - CustomHook
 
-```
+1. Copiar y pegar archivo **TrafficLightWithEffect.tsx** en la misma carpeta **02-useEffect**
+
+2. Renombrar archivo **TrafficLightWithEffect copy.tsx** por **TrafficLightWithHook.tsx**
+
+3. Crear carpeta **hooks** en la raiz **/src**
+
+4. Crear archivo **./hooks/useTrafficLight.ts**
