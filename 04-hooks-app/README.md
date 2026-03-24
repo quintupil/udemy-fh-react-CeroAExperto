@@ -1,56 +1,4 @@
-# Curso React: De cero a experto
-
-## Git-Hub: Clonar proyecto.
-
-**git@github-renato:renato-quintupil/udemy-fh-react-CeroAExperto.git**
-
-## Sección 9: Profundizando Hooks
-
-## 116. Inicio de aplicación - HooksApp
-
-### Project: **04-hooks-app**
-
-#### I.- Inicio Proyecto
-
-1. Ejecutar en CLI:
-
-```bash
-npm create vite@latest
-```
-
-2. Project name: **04-hooks-app**
-
-3. Select framework: **React**
-
-4. Select a variant: **TypeScript + SWC**
-
-   **En versión actualizada de Vite ahora la opción es:**
-
-```
-TypeScript + React Compiler
-```
-
-5. ir **04-hooks-app/**
-
-```
-cd 04-hooks-app/
-```
-
-6. Instalar
-
-```bash
-npm install
-```
-
-7. Iniciar servidor
-
-```bash
-npm run dev
-```
-
-8. Limpiar proyecto base
-
-9. Crear componente HooksApp.tsx
+# 04-hooks-app
 
 ## 117. TailwindCSS y Estilos
 
@@ -88,10 +36,7 @@ export default defineConfig({
 4. Agregar estilos :
 
 Recurso:
-
-```
-https://gist.github.com/Klerith/8a5440ab34058b22e4874e01e7e931a0
-```
+**https://gist.github.com/Klerith/8a5440ab34058b22e4874e01e7e931a0**
 
 Copiar contenido y pegar en **index.css**
 
@@ -101,28 +46,6 @@ Copiar contenido y pegar en **index.css**
 .bg-gradient {
   @apply bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 min-h-screen flex items-center justify-center p-4 text-white;
 }
-```
-
-Error
-
-```bash
-The class bg-gradient-to-br can be written as bg-linear-to-br(suggestCanonicalClasses) .bg-gradient-to-br { --tw-gradient-position: to bottom right in oklab; background-image: linear-gradient(var(--tw-gradient-stops)); }"
-```
-
-Solución: Ese warning de VS Code no es un error de CSS. Es una sugerencia del plugin de Tailwind para usar la clase canónica más nueva.
-
-En tu caso:
-
-- **bg-gradient-to-br**
-- se puede escribir como
-- **bg-linear-to-br**
-
-5. Agregar estilo **src/HooksApp.tsx**
-
-```bash
-    <div className="bg-gradient">
-      <h1 className="text-3xl font-bold underline">Hola Mundo!!!</h1>
-    </div>
 ```
 
 ## 118. useState - Estado que re-dibuja
