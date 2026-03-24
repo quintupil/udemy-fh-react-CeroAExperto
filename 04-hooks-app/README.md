@@ -122,3 +122,8 @@ https://gist.github.com/Klerith/8ddc0ae428867ee48b2bafd812148d71
 4. Crear archivo **/hooks/usePokemon.ts**
 
 5. Crear archivo **/hooks/useCounter.ts**
+
+## 126. useRef - Valor que no dispara re-render
+
+1. Crear carpeta en la raiz **/src/04-useRef/**
+2. Crear archivo **/src/04-useRef/FocusScreen.tsx**
