@@ -117,7 +117,9 @@ En tu caso:
 - se puede escribir como
 - **bg-linear-to-br**
 
-5. Agregar estilo al Hola Mundo
+5. Crear archivo **src/HooksApp.tsx**
+
+6. Agregar estilo al Hola Mundo
 
 ```bash
     <div className="bg-gradient">
